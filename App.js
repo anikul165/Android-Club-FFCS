@@ -11,7 +11,8 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.headerText}>Welcome!</Text>
       <Avatar />
-      <Login />
+      <Login placeholder="Username" />
+      <Login placeholder="Password" secureTextEntry={true} />
       <MyButton />
     </View>
   );

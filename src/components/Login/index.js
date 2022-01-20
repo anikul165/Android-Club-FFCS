@@ -1,22 +1,14 @@
 import React from 'react';
 import {StyleSheet, Text, View, TextInput, username} from 'react-native';
 
-export default function Login() {
+export default function Login({placeholder, secureTextEntry}) {
   return (
     <View style={styles.container}>
       <TextInput
-        placeholder="Username"
-        username="username"
+        placeholder={placeholder}
+        secureTextEntry={secureTextEntry}
         style={styles.login}
         keyboardType={'default'}
-        maxLength={16}
-      />
-      <TextInput
-        placeholder="Password"
-        username="username"
-        style={styles.login}
-        keyboardType={'default'}
-        secureTextEntry={true}
         maxLength={16}
       />
     </View>
